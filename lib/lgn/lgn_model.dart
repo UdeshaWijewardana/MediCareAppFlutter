@@ -1,4 +1,5 @@
 import '/flutter_flow/flutter_flow_util.dart';
+import '/index.dart';
 import 'lgn_widget.dart' show LgnWidget;
 import 'package:flutter/material.dart';
 

@@ -8,6 +8,9 @@ export 'frp_model.dart';
 class FrpWidget extends StatefulWidget {
   const FrpWidget({super.key});
 
+  static String routeName = 'frp';
+  static String routePath = '/frp';
+
   @override
   State<FrpWidget> createState() => _FrpWidgetState();
 }
@@ -76,10 +79,10 @@ class _FrpWidgetState extends State<FrpWidget> {
                       ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-1.0, 0.0),
+                  alignment: AlignmentDirectional(-1.0, 0.0),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(50.0, 25.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(50.0, 25.0, 0.0, 0.0),
                     child: Text(
                       'Enter your  New Password',
                       textAlign: TextAlign.start,
@@ -91,8 +94,8 @@ class _FrpWidgetState extends State<FrpWidget> {
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, 0.0),
-                  child: SizedBox(
+                  alignment: AlignmentDirectional(0.0, 0.0),
+                  child: Container(
                     width: 300.0,
                     child: TextFormField(
                       controller: _model.textController1,
@@ -113,14 +116,14 @@ class _FrpWidgetState extends State<FrpWidget> {
                                   letterSpacing: 0.0,
                                 ),
                         enabledBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
+                          borderSide: BorderSide(
                             color: Color(0x00000000),
                             width: 1.0,
                           ),
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
+                          borderSide: BorderSide(
                             color: Color(0x00000000),
                             width: 1.0,
                           ),
@@ -141,7 +144,7 @@ class _FrpWidgetState extends State<FrpWidget> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         filled: true,
-                        fillColor: const Color(0xFFE1E1E1),
+                        fillColor: Color(0xFFE1E1E1),
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
@@ -154,10 +157,10 @@ class _FrpWidgetState extends State<FrpWidget> {
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(-1.0, 0.0),
+                  alignment: AlignmentDirectional(-1.0, 0.0),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(50.0, 20.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(50.0, 20.0, 0.0, 0.0),
                     child: Text(
                       'Re type to Confirm your new password',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -167,7 +170,7 @@ class _FrpWidgetState extends State<FrpWidget> {
                     ),
                   ),
                 ),
-                SizedBox(
+                Container(
                   width: 300.0,
                   child: TextFormField(
                     controller: _model.textController2,
@@ -188,14 +191,14 @@ class _FrpWidgetState extends State<FrpWidget> {
                                 letterSpacing: 0.0,
                               ),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
@@ -216,7 +219,7 @@ class _FrpWidgetState extends State<FrpWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       filled: true,
-                      fillColor: const Color(0xFFE8E8E8),
+                      fillColor: Color(0xFFE8E8E8),
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
@@ -235,9 +238,9 @@ class _FrpWidgetState extends State<FrpWidget> {
                   options: FFButtonOptions(
                     height: 40.0,
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     iconPadding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).primary,
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily: 'Readex Pro',

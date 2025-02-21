@@ -8,6 +8,9 @@ export 'wtrintk_model.dart';
 class WtrintkWidget extends StatefulWidget {
   const WtrintkWidget({super.key});
 
+  static String routeName = 'wtrintk';
+  static String routePath = '/wtrintk';
+
   @override
   State<WtrintkWidget> createState() => _WtrintkWidgetState();
 }
@@ -42,7 +45,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: const Color(0xFFF0F5F9),
+        backgroundColor: Color(0xFFF0F5F9),
         appBar: AppBar(
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
@@ -70,14 +73,14 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                   fontWeight: FontWeight.w600,
                 ),
           ),
-          actions: const [],
+          actions: [],
           centerTitle: false,
           elevation: 2.0,
         ),
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
+            padding: EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
             child: SingleChildScrollView(
               primary: false,
               child: Column(
@@ -97,7 +100,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             20.0, 20.0, 20.0, 20.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -109,7 +112,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                   .headlineSmall
                                   .override(
                                     fontFamily: 'Outfit',
-                                    color: const Color(0xFF161C24),
+                                    color: Color(0xFF161C24),
                                     fontSize: 24.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
@@ -125,7 +128,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                       .displayLarge
                                       .override(
                                         fontFamily: 'Outfit',
-                                        color: const Color(0xFF2797FF),
+                                        color: Color(0xFF2797FF),
                                         fontSize: 57.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.normal,
@@ -137,19 +140,19 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                       .headlineMedium
                                       .override(
                                         fontFamily: 'Outfit',
-                                        color: const Color(0xFF636F81),
+                                        color: Color(0xFF636F81),
                                         fontSize: 32.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
-                              ].divide(const SizedBox(width: 8.0)),
+                              ].divide(SizedBox(width: 8.0)),
                             ),
-                            SizedBox(
+                            Container(
                               width: 300.0,
                               child: Slider(
-                                activeColor: const Color(0xFF2797FF),
-                                inactiveColor: const Color(0xFFE0E0E0),
+                                activeColor: Color(0xFF2797FF),
+                                inactiveColor: Color(0xFFE0E0E0),
                                 min: 0.0,
                                 max: 2.5,
                                 value: _model.sliderValue ??= 1.2,
@@ -167,13 +170,13 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Manrope',
-                                    color: const Color(0xFF636F81),
+                                    color: Color(0xFF636F81),
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
                                   ),
                             ),
-                          ].divide(const SizedBox(height: 16.0)),
+                          ].divide(SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
@@ -191,7 +194,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             20.0, 20.0, 20.0, 20.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -202,7 +205,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                   .headlineSmall
                                   .override(
                                     fontFamily: 'Outfit',
-                                    color: const Color(0xFF161C24),
+                                    color: Color(0xFF161C24),
                                     fontSize: 24.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
@@ -220,11 +223,11 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                       width: 60.0,
                                       height: 60.0,
                                       decoration: BoxDecoration(
-                                        color: const Color(0x4C2797FF),
+                                        color: Color(0x4C2797FF),
                                         borderRadius:
                                             BorderRadius.circular(30.0),
                                       ),
-                                      child: const Icon(
+                                      child: Icon(
                                         Icons.local_drink,
                                         color: Color(0xFF2797FF),
                                         size: 30.0,
@@ -236,13 +239,13 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Manrope',
-                                            color: const Color(0xFF161C24),
+                                            color: Color(0xFF161C24),
                                             fontSize: 14.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
                                           ),
                                     ),
-                                  ].divide(const SizedBox(height: 8.0)),
+                                  ].divide(SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -252,11 +255,11 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                       width: 60.0,
                                       height: 60.0,
                                       decoration: BoxDecoration(
-                                        color: const Color(0x4C2797FF),
+                                        color: Color(0x4C2797FF),
                                         borderRadius:
                                             BorderRadius.circular(30.0),
                                       ),
-                                      child: const Icon(
+                                      child: Icon(
                                         Icons.local_drink,
                                         color: Color(0xFF2797FF),
                                         size: 30.0,
@@ -268,13 +271,13 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Manrope',
-                                            color: const Color(0xFF161C24),
+                                            color: Color(0xFF161C24),
                                             fontSize: 14.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
                                           ),
                                     ),
-                                  ].divide(const SizedBox(height: 8.0)),
+                                  ].divide(SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -284,11 +287,11 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                       width: 60.0,
                                       height: 60.0,
                                       decoration: BoxDecoration(
-                                        color: const Color(0x4C2797FF),
+                                        color: Color(0x4C2797FF),
                                         borderRadius:
                                             BorderRadius.circular(30.0),
                                       ),
-                                      child: const Icon(
+                                      child: Icon(
                                         Icons.local_drink,
                                         color: Color(0xFF2797FF),
                                         size: 30.0,
@@ -300,17 +303,17 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Manrope',
-                                            color: const Color(0xFF161C24),
+                                            color: Color(0xFF161C24),
                                             fontSize: 14.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
                                           ),
                                     ),
-                                  ].divide(const SizedBox(height: 8.0)),
+                                  ].divide(SizedBox(height: 8.0)),
                                 ),
                               ],
                             ),
-                          ].divide(const SizedBox(height: 16.0)),
+                          ].divide(SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
@@ -328,7 +331,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             20.0, 20.0, 20.0, 20.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -339,7 +342,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                   .headlineSmall
                                   .override(
                                     fontFamily: 'Outfit',
-                                    color: const Color(0xFF161C24),
+                                    color: Color(0xFF161C24),
                                     fontSize: 24.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
@@ -360,11 +363,11 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                           width: 40.0,
                                           height: 40.0,
                                           decoration: BoxDecoration(
-                                            color: const Color(0x4C0B67BC),
+                                            color: Color(0x4C0B67BC),
                                             borderRadius:
                                                 BorderRadius.circular(20.0),
                                           ),
-                                          child: const Icon(
+                                          child: Icon(
                                             Icons.opacity,
                                             color: Color(0xFF0B67BC),
                                             size: 24.0,
@@ -382,7 +385,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                                   .bodyLarge
                                                   .override(
                                                     fontFamily: 'Manrope',
-                                                    color: const Color(0xFF161C24),
+                                                    color: Color(0xFF161C24),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -395,7 +398,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                                   .bodySmall
                                                   .override(
                                                     fontFamily: 'Manrope',
-                                                    color: const Color(0xFF636F81),
+                                                    color: Color(0xFF636F81),
                                                     fontSize: 12.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -403,9 +406,9 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                             ),
                                           ],
                                         ),
-                                      ].divide(const SizedBox(width: 12.0)),
+                                      ].divide(SizedBox(width: 12.0)),
                                     ),
-                                    const Icon(
+                                    Icon(
                                       Icons.delete_outline,
                                       color: Color(0xFFEE4444),
                                       size: 24.0,
@@ -424,11 +427,11 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                           width: 40.0,
                                           height: 40.0,
                                           decoration: BoxDecoration(
-                                            color: const Color(0x4C0B67BC),
+                                            color: Color(0x4C0B67BC),
                                             borderRadius:
                                                 BorderRadius.circular(20.0),
                                           ),
-                                          child: const Icon(
+                                          child: Icon(
                                             Icons.opacity,
                                             color: Color(0xFF0B67BC),
                                             size: 24.0,
@@ -446,7 +449,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                                   .bodyLarge
                                                   .override(
                                                     fontFamily: 'Manrope',
-                                                    color: const Color(0xFF161C24),
+                                                    color: Color(0xFF161C24),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -459,7 +462,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                                   .bodySmall
                                                   .override(
                                                     fontFamily: 'Manrope',
-                                                    color: const Color(0xFF636F81),
+                                                    color: Color(0xFF636F81),
                                                     fontSize: 12.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -467,9 +470,9 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                             ),
                                           ],
                                         ),
-                                      ].divide(const SizedBox(width: 12.0)),
+                                      ].divide(SizedBox(width: 12.0)),
                                     ),
-                                    const Icon(
+                                    Icon(
                                       Icons.delete_outline,
                                       color: Color(0xFFEE4444),
                                       size: 24.0,
@@ -488,11 +491,11 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                           width: 40.0,
                                           height: 40.0,
                                           decoration: BoxDecoration(
-                                            color: const Color(0x4C0B67BC),
+                                            color: Color(0x4C0B67BC),
                                             borderRadius:
                                                 BorderRadius.circular(20.0),
                                           ),
-                                          child: const Icon(
+                                          child: Icon(
                                             Icons.opacity,
                                             color: Color(0xFF0B67BC),
                                             size: 24.0,
@@ -510,7 +513,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                                   .bodyLarge
                                                   .override(
                                                     fontFamily: 'Manrope',
-                                                    color: const Color(0xFF161C24),
+                                                    color: Color(0xFF161C24),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -523,7 +526,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                                   .bodySmall
                                                   .override(
                                                     fontFamily: 'Manrope',
-                                                    color: const Color(0xFF636F81),
+                                                    color: Color(0xFF636F81),
                                                     fontSize: 12.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -531,18 +534,18 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                             ),
                                           ],
                                         ),
-                                      ].divide(const SizedBox(width: 12.0)),
+                                      ].divide(SizedBox(width: 12.0)),
                                     ),
-                                    const Icon(
+                                    Icon(
                                       Icons.delete_outline,
                                       color: Color(0xFFEE4444),
                                       size: 24.0,
                                     ),
                                   ],
                                 ),
-                              ].divide(const SizedBox(height: 12.0)),
+                              ].divide(SizedBox(height: 12.0)),
                             ),
-                          ].divide(const SizedBox(height: 16.0)),
+                          ].divide(SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
@@ -560,7 +563,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             20.0, 20.0, 20.0, 20.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -571,7 +574,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                   .headlineSmall
                                   .override(
                                     fontFamily: 'Outfit',
-                                    color: const Color(0xFF161C24),
+                                    color: Color(0xFF161C24),
                                     fontSize: 24.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
@@ -587,7 +590,7 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                       .bodyLarge
                                       .override(
                                         fontFamily: 'Manrope',
-                                        color: const Color(0xFF161C24),
+                                        color: Color(0xFF161C24),
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -599,10 +602,10 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                     safeSetState(
                                         () => _model.switchValue = newValue);
                                   },
-                                  activeColor: const Color(0xFF2797FF),
-                                  activeTrackColor: const Color(0xFF636F81),
-                                  inactiveTrackColor: const Color(0xFF636F81),
-                                  inactiveThumbColor: const Color(0xFF636F81),
+                                  activeColor: Color(0xFF2797FF),
+                                  activeTrackColor: Color(0xFF636F81),
+                                  inactiveTrackColor: Color(0xFF636F81),
+                                  inactiveThumbColor: Color(0xFF636F81),
                                 ),
                               ],
                             ),
@@ -612,18 +615,18 @@ class _WtrintkWidgetState extends State<WtrintkWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Manrope',
-                                    color: const Color(0xFF636F81),
+                                    color: Color(0xFF636F81),
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
                                   ),
                             ),
-                          ].divide(const SizedBox(height: 16.0)),
+                          ].divide(SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
                   ),
-                ].divide(const SizedBox(height: 24.0)),
+                ].divide(SizedBox(height: 24.0)),
               ),
             ),
           ),

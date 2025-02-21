@@ -3,8 +3,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '/index.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+
+import '/index.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -32,67 +33,67 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
-      errorBuilder: (context, state) => const HomeWidget(),
+      errorBuilder: (context, state) => HomeWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => const HomeWidget(),
+          builder: (context, _) => HomeWidget(),
         ),
         FFRoute(
-          name: 'start',
-          path: '/start',
-          builder: (context, params) => const StartWidget(),
+          name: StartWidget.routeName,
+          path: StartWidget.routePath,
+          builder: (context, params) => StartWidget(),
         ),
         FFRoute(
-          name: 'lgn',
-          path: '/lgn',
-          builder: (context, params) => const LgnWidget(),
+          name: LgnWidget.routeName,
+          path: LgnWidget.routePath,
+          builder: (context, params) => LgnWidget(),
         ),
         FFRoute(
-          name: 'frp',
-          path: '/frp',
-          builder: (context, params) => const FrpWidget(),
+          name: FrpWidget.routeName,
+          path: FrpWidget.routePath,
+          builder: (context, params) => FrpWidget(),
         ),
         FFRoute(
-          name: 'home',
-          path: '/home',
-          builder: (context, params) => const HomeWidget(),
+          name: HomeWidget.routeName,
+          path: HomeWidget.routePath,
+          builder: (context, params) => HomeWidget(),
         ),
         FFRoute(
-          name: 'sign',
-          path: '/sign',
-          builder: (context, params) => const SignWidget(),
+          name: SignWidget.routeName,
+          path: SignWidget.routePath,
+          builder: (context, params) => SignWidget(),
         ),
         FFRoute(
-          name: 'allhome',
-          path: '/allhome',
-          builder: (context, params) => const AllhomeWidget(),
+          name: AllhomeWidget.routeName,
+          path: AllhomeWidget.routePath,
+          builder: (context, params) => AllhomeWidget(),
         ),
         FFRoute(
-          name: 'calculator',
-          path: '/calculator',
-          builder: (context, params) => const CalculatorWidget(),
+          name: CalculatorWidget.routeName,
+          path: CalculatorWidget.routePath,
+          builder: (context, params) => CalculatorWidget(),
         ),
         FFRoute(
-          name: 'hspitl',
-          path: '/hspitl',
-          builder: (context, params) => const HspitlWidget(),
+          name: WtrintkWidget.routeName,
+          path: WtrintkWidget.routePath,
+          builder: (context, params) => WtrintkWidget(),
         ),
         FFRoute(
-          name: 'stepcounter',
-          path: '/stepcounter',
-          builder: (context, params) => const StepcounterWidget(),
+          name: HospitalsWidget.routeName,
+          path: HospitalsWidget.routePath,
+          builder: (context, params) => HospitalsWidget(),
         ),
         FFRoute(
-          name: 'sos',
-          path: '/sos',
-          builder: (context, params) => const SosWidget(),
+          name: StepcounterWidget.routeName,
+          path: StepcounterWidget.routePath,
+          builder: (context, params) => StepcounterWidget(),
         ),
         FFRoute(
-          name: 'wtrintk',
-          path: '/wtrintk',
-          builder: (context, params) => const WtrintkWidget(),
+          name: SospageWidget.routeName,
+          path: SospageWidget.routePath,
+          builder: (context, params) => SospageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -256,7 +257,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

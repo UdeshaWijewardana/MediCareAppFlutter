@@ -2,12 +2,16 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/index.dart';
 import 'package:flutter/material.dart';
 import 'sign_model.dart';
 export 'sign_model.dart';
 
 class SignWidget extends StatefulWidget {
   const SignWidget({super.key});
+
+  static String routeName = 'sign';
+  static String routePath = '/sign';
 
   @override
   State<SignWidget> createState() => _SignWidgetState();
@@ -79,7 +83,7 @@ class _SignWidgetState extends State<SignWidget> {
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: const [],
+          actions: [],
           centerTitle: true,
           elevation: 2.0,
         ),
@@ -100,7 +104,7 @@ class _SignWidgetState extends State<SignWidget> {
               Container(
                 width: MediaQuery.sizeOf(context).width * 1.0,
                 height: MediaQuery.sizeOf(context).height * 1.0,
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [Color(0x99000000), Colors.transparent],
                     stops: [0.0, 1.0],
@@ -110,13 +114,13 @@ class _SignWidgetState extends State<SignWidget> {
                 ),
                 child: Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
+                      EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             48.0, 25.0, 48.0, 0.0),
                         child: Text(
                           'Create Your Account',
@@ -133,7 +137,7 @@ class _SignWidgetState extends State<SignWidget> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             48.0, 0.0, 48.0, 0.0),
                         child: Text(
                           'Join us to track your health journey',
@@ -141,23 +145,23 @@ class _SignWidgetState extends State<SignWidget> {
                           style:
                               FlutterFlowTheme.of(context).bodyLarge.override(
                                     fontFamily: 'Readex Pro',
-                                    color: const Color(0xFFE0E0E0),
+                                    color: Color(0xFFE0E0E0),
                                     letterSpacing: 0.0,
                                   ),
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             48.0, 0.0, 48.0, 0.0),
                         child: Container(
                           width: MediaQuery.sizeOf(context).width * 1.0,
                           height: 508.89,
                           decoration: BoxDecoration(
-                            color: const Color(0x33FFFFFF),
+                            color: Color(0x33FFFFFF),
                             borderRadius: BorderRadius.circular(16.0),
                           ),
                           child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 24.0, 24.0, 24.0, 24.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -182,36 +186,36 @@ class _SignWidgetState extends State<SignWidget> {
                                           letterSpacing: 0.0,
                                         ),
                                     enabledBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Colors.white,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     filled: true,
-                                    fillColor: const Color(0x1AFFFFFF),
-                                    suffixIcon: const Icon(
+                                    fillColor: Color(0x1AFFFFFF),
+                                    suffixIcon: Icon(
                                       Icons.person,
                                     ),
                                   ),
@@ -245,36 +249,36 @@ class _SignWidgetState extends State<SignWidget> {
                                           letterSpacing: 0.0,
                                         ),
                                     enabledBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Colors.white,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     filled: true,
-                                    fillColor: const Color(0x1AFFFFFF),
-                                    suffixIcon: const Icon(
+                                    fillColor: Color(0x1AFFFFFF),
+                                    suffixIcon: Icon(
                                       Icons.calendar_today,
                                     ),
                                   ),
@@ -309,35 +313,35 @@ class _SignWidgetState extends State<SignWidget> {
                                           letterSpacing: 0.0,
                                         ),
                                     enabledBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Colors.white,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     filled: true,
-                                    fillColor: const Color(0x1AFFFFFF),
+                                    fillColor: Color(0x1AFFFFFF),
                                     suffixIcon: InkWell(
                                       onTap: () => safeSetState(
                                         () => _model.passwordVisibility1 =
@@ -382,35 +386,35 @@ class _SignWidgetState extends State<SignWidget> {
                                           letterSpacing: 0.0,
                                         ),
                                     enabledBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Colors.white,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     filled: true,
-                                    fillColor: const Color(0x1AFFFFFF),
+                                    fillColor: Color(0x1AFFFFFF),
                                     suffixIcon: InkWell(
                                       onTap: () => safeSetState(
                                         () => _model.passwordVisibility2 =
@@ -436,20 +440,20 @@ class _SignWidgetState extends State<SignWidget> {
                                       .asValidator(context),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 40.0, 0.0, 0.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
-                                      context.pushNamed('lgn');
+                                      context.pushNamed(LgnWidget.routeName);
                                     },
                                     text: 'Register Now',
                                     options: FFButtonOptions(
                                       width: MediaQuery.sizeOf(context).width *
                                           1.0,
                                       height: 50.0,
-                                      padding: const EdgeInsets.all(8.0),
+                                      padding: EdgeInsets.all(8.0),
                                       iconPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
+                                          EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
                                       color:
                                           FlutterFlowTheme.of(context).primary,
@@ -465,12 +469,12 @@ class _SignWidgetState extends State<SignWidget> {
                                     ),
                                   ),
                                 ),
-                              ].divide(const SizedBox(height: 24.0)),
+                              ].divide(SizedBox(height: 24.0)),
                             ),
                           ),
                         ),
                       ),
-                    ].divide(const SizedBox(height: 24.0)),
+                    ].divide(SizedBox(height: 24.0)),
                   ),
                 ),
               ),

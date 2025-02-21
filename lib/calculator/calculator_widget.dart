@@ -9,6 +9,9 @@ export 'calculator_model.dart';
 class CalculatorWidget extends StatefulWidget {
   const CalculatorWidget({super.key});
 
+  static String routeName = 'calculator';
+  static String routePath = '/calculator';
+
   @override
   State<CalculatorWidget> createState() => _CalculatorWidgetState();
 }
@@ -73,7 +76,7 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: const [],
+          actions: [],
           centerTitle: true,
           elevation: 2.0,
         ),
@@ -86,7 +89,7 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
               color: FlutterFlowTheme.of(context).secondaryBackground,
             ),
             child: Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
+              padding: EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
               child: SingleChildScrollView(
                 primary: false,
                 child: Column(
@@ -151,7 +154,7 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
                           borderRadius: BorderRadius.circular(16.0),
                         ),
                         child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               20.0, 20.0, 20.0, 20.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -195,21 +198,21 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   focusedBorder: OutlineInputBorder(
-                                    borderSide: const BorderSide(
+                                    borderSide: BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   errorBorder: OutlineInputBorder(
-                                    borderSide: const BorderSide(
+                                    borderSide: BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   focusedErrorBorder: OutlineInputBorder(
-                                    borderSide: const BorderSide(
+                                    borderSide: BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
@@ -218,7 +221,7 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
                                   filled: true,
                                   fillColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  suffixIcon: const Icon(
+                                  suffixIcon: Icon(
                                     Icons.height,
                                   ),
                                 ),
@@ -261,21 +264,21 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   focusedBorder: OutlineInputBorder(
-                                    borderSide: const BorderSide(
+                                    borderSide: BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   errorBorder: OutlineInputBorder(
-                                    borderSide: const BorderSide(
+                                    borderSide: BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   focusedErrorBorder: OutlineInputBorder(
-                                    borderSide: const BorderSide(
+                                    borderSide: BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
@@ -284,7 +287,7 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
                                   filled: true,
                                   fillColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  suffixIcon: const Icon(
+                                  suffixIcon: Icon(
                                     Icons.fitness_center,
                                   ),
                                 ),
@@ -307,8 +310,8 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
                                 options: FFButtonOptions(
                                   width: MediaQuery.sizeOf(context).width * 1.0,
                                   height: 50.0,
-                                  padding: const EdgeInsets.all(8.0),
-                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsets.all(8.0),
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
                                   color: FlutterFlowTheme.of(context).primary,
                                   textStyle: FlutterFlowTheme.of(context)
@@ -323,7 +326,7 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
                                   borderRadius: BorderRadius.circular(25.0),
                                 ),
                               ),
-                            ].divide(const SizedBox(height: 24.0)),
+                            ].divide(SizedBox(height: 24.0)),
                           ),
                         ),
                       ),
@@ -341,7 +344,7 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
                           borderRadius: BorderRadius.circular(16.0),
                         ),
                         child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               20.0, 20.0, 20.0, 20.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -371,7 +374,7 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: const EdgeInsets.all(16.0),
+                                  padding: EdgeInsets.all(16.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -400,18 +403,18 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
                                               letterSpacing: 0.0,
                                             ),
                                       ),
-                                    ].divide(const SizedBox(height: 8.0)),
+                                    ].divide(SizedBox(height: 8.0)),
                                   ),
                                 ),
                               ),
-                            ].divide(const SizedBox(height: 16.0)),
+                            ].divide(SizedBox(height: 16.0)),
                           ),
                         ),
                       ),
                     ),
                     Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -504,7 +507,7 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
                               ),
                             ],
                           ),
-                        ].divide(const SizedBox(height: 16.0)),
+                        ].divide(SizedBox(height: 16.0)),
                       ),
                     ),
                     Material(
@@ -534,7 +537,7 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
                           borderRadius: BorderRadius.circular(16.0),
                         ),
                         child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               20.0, 20.0, 20.0, 20.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -561,12 +564,12 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
                                       letterSpacing: 0.0,
                                     ),
                               ),
-                            ].divide(const SizedBox(height: 12.0)),
+                            ].divide(SizedBox(height: 12.0)),
                           ),
                         ),
                       ),
                     ),
-                  ].divide(const SizedBox(height: 24.0)),
+                  ].divide(SizedBox(height: 24.0)),
                 ),
               ),
             ),

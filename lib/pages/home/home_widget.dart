@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
@@ -9,6 +10,9 @@ export 'home_model.dart';
 
 class HomeWidget extends StatefulWidget {
   const HomeWidget({super.key});
+
+  static String routeName = 'home';
+  static String routePath = '/home';
 
   @override
   State<HomeWidget> createState() => _HomeWidgetState();
@@ -54,7 +58,7 @@ class _HomeWidgetState extends State<HomeWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 150.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 150.0, 0.0, 0.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
@@ -96,19 +100,19 @@ class _HomeWidgetState extends State<HomeWidget> {
                   animate: true,
                 ),
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () async {
-                      context.pushNamed('start');
+                      context.pushNamed(StartWidget.routeName);
                     },
                     text: 'GET STARTED',
                     options: FFButtonOptions(
                       width: 300.0,
                       height: 50.0,
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       iconPadding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
@@ -119,7 +123,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                               ),
                       elevation: 0.0,
                       borderRadius: BorderRadius.circular(8.0),
-                      hoverColor: const Color(0xFF032B42),
+                      hoverColor: Color(0xFF032B42),
                     ),
                   ),
                 ),

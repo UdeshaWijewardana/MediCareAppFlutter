@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'sos_widget.dart' show SosWidget;
+import 'sospage_widget.dart' show SospageWidget;
 import 'package:flutter/material.dart';
 
-class SosModel extends FlutterFlowModel<SosWidget> {
+class SospageModel extends FlutterFlowModel<SospageWidget> {
   @override
   void initState(BuildContext context) {}
 
